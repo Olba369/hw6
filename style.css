@@ -1,0 +1,27 @@
+.table {
+  margin: 0 auto;
+  border: 4px solid black;
+  border-spacing: 2px;
+  height: 500px;
+  width: 400px;
+}
+. table td {
+  border: 2px solid black;
+}
+
+td[colspan*="2"] {
+  background: goldenrod;
+}
+td[rowspan*="2"] {
+  background: red;
+}
+td[colspan*="3"] {
+  background-color: blue;
+}
+td[rowspan*="2"]:not([colspan]) + td {
+  background-color: black;
+  color: aqua;
+}
+td[colspan*="2"][rowspan*="2"] + td {
+  background-color: black;
+}
